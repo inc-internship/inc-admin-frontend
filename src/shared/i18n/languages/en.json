@@ -1,0 +1,266 @@
+{
+  "language": {
+    "english": "English",
+    "russian": "Russian"
+  },
+  "createPost": {
+    "addPhoto": "Add Photo",
+    "cropping": "Cropping",
+    "filters": "Filters",
+    "publication": "Publication",
+    "publish": "Publish",
+    "selectFromComputer": "Select from Computer",
+    "openDraft": "Open Draft",
+    "addPublicationDescription": "Add publication descriptions",
+    "textArea": "Text-area",
+    "location": "location",
+    "closePublication": "Close publication",
+    "closePublicationDescription": "Do you really want to close the creation of a publication? If you close everything will be deleted",
+    "saveDraft": "Save draft",
+    "discard": "Discard",
+    "validation": {
+      "invalidTypeOrSize": "The photo must be less than 3 Mb and have JPEG or PNG format"
+    }
+  },
+  "header": {
+    "logIn": "Log In",
+    "signUp": "Sign Up",
+    "notifications": "Notifications"
+  },
+  "auth": {
+    "login": {
+      "title": "Sign in",
+      "noAccount": "Don't have an account?",
+      "forgotPassword": "Forgot password",
+      "submit": "Sign In"
+    },
+    "registration": {
+      "title": "Sign Up",
+      "haveAccount": "Do you have an account?",
+      "submit": "Sign Up",
+      "userName": "UserName",
+      "termsAgreePrefix": "I agree to the",
+      "termsOfService": "Terms of Service",
+      "and": "and",
+      "privacyPolicy": "Privacy Policy"
+    },
+    "forgotPassword": {
+      "title": "Forgot Password",
+      "backToSignIn": "Back to Sign In",
+      "instructions": "Enter your email and we will send you further instruction",
+      "sendLink": "Send Link",
+      "userNotFound": "User with this email doesn't exist",
+      "recaptchaRequired": "Please complete the captcha"
+    },
+    "createPassword": {
+      "title": "Create New Password",
+      "newPassword": "New password",
+      "passwordConfirmation": "Password confirmation",
+      "description": "Your password must be between {{min}} and {{max}} characters",
+      "submit": "Create new password",
+      "notChanged": "Password wasn't changed"
+    },
+    "recoveryExpired": {
+      "title": "Password recovery link expired",
+      "description": "Looks like the recovery link has expired. Not to worry, we can send the link again",
+      "resendLink": "Resend link"
+    },
+    "verificationExpired": {
+      "title": "Email verification link expired",
+      "description": "Looks like the verification link has expired. Not to worry, we can send the link again",
+      "resendLink": "Resend verification link",
+      "emailInvalid": "Email is invalid or cannot be used",
+      "tooManyAttempts": "Too many attempts. Try again later."
+    },
+    "emailConfirmed": {
+      "title": "Congratulations!",
+      "text": "Your email has been confirmed",
+      "signInButton": "Sign In"
+    },
+    "emailSent": {
+      "title": "Email sent",
+      "description": "We have sent a link to confirm your email to {{email}}"
+    },
+    "logout": {
+      "title": "Log Out",
+      "description": "Do you really want to log out of your account \"{{email}}\"?"
+    }
+  },
+  "main": {
+    "title": "Main page",
+    "description": "You are on the main page of the application.",
+    "feedTitle": "Discover public posts",
+    "feedDescription": "Read latest posts from the community and explore public content.",
+    "totalUsersLabel": "Registered users",
+    "registeredUsersLabel": "Registered users:",
+    "latestPostsTitle": "Latest posts",
+    "refreshHint": "Content is refreshed every minute",
+    "postImageAlt": "Post by {{login}}",
+    "avatarAlt": "Avatar of {{login}}",
+    "goToSlide": "Go to slide {{slide}}",
+    "showMore": "Show more",
+    "hide": "Hide",
+    "justNow": "just now",
+    "noImage": "Image is not available",
+    "noDescription": "No description",
+    "noPosts": "No public posts yet"
+  },
+  "datePicker": {
+    "date": "Date",
+    "dateRange": "Date range",
+    "placeholder": "Date select"
+  },
+  "sidebar": {
+    "feed": "Feed",
+    "create": "Create",
+    "myProfile": "My Profile",
+    "messenger": "Messenger",
+    "search": "Search",
+    "statistics": "Statistics",
+    "favorites": "Favorites",
+    "logOut": "Log Out",
+    "registeredUserSidebar": "Registered user sidebar",
+    "mainNavigation": "Main navigation"
+  },
+  "menu": {
+    "openMoreMenu": "Open more menu",
+    "moreActions": "More actions",
+    "profileSettings": "Profile Settings"
+  },
+  "legal": {
+    "backToSignUp": "Back to Sign Up",
+    "privacyPolicyTitle": "Privacy Policy",
+    "termsOfServiceTitle": "Terms of service"
+  },
+  "common": {
+    "loading": "Loading...",
+    "ok": "OK",
+    "yes": "Yes",
+    "no": "No",
+    "email": "Email",
+    "password": "Password",
+    "passwordConfirmation": "Password confirmation",
+    "newPassword": "New password",
+    "user": "User",
+    "closeMessage": "Close message",
+    "selectPlaceholder": "Select-box",
+    "flagAlt": "flag {{label}}",
+    "showPassword": "Show password",
+    "hidePassword": "Hide password",
+    "previousSlide": "Previous slide",
+    "nextSlide": "Next slide",
+    "addImage": "Add image",
+    "deleteImage": "Delete {{name}}",
+    "showThumbnails": "Show thumbnails",
+    "hideThumbnails": "Hide thumbnails",
+    "openAspectRatioControls": "Open aspect ratio controls",
+    "closeAspectRatioControls": "Close aspect ratio controls",
+    "aspectRatioOptions": "Aspect ratio options",
+    "openZoomControls": "Open zoom controls",
+    "closeZoomControls": "Close zoom controls",
+    "zoomLevel": "Zoom level",
+    "somethingWentWrong": "Something went wrong",
+    "goBack": "Go back",
+    "next": "Next",
+    "closeModal": "Close modal",
+    "error": "Error",
+    "userNotFound": "UserNotFound"
+  },
+  "aspectRatio": {
+    "original": "Original"
+  },
+  "validation": {
+    "email": {
+      "format": "The email must match the format example@example.com"
+    },
+    "password": {
+      "required": "Password field is required",
+      "min": "Minimum {{count}} characters",
+      "max": "Maximum {{count}} characters",
+      "number": "Must contain at least one number",
+      "lowercase": "Must contain at least one lowercase letter",
+      "uppercase": "Must contain at least one uppercase letter",
+      "invalidChars": "Contains invalid characters",
+      "complexity": "Password must contain at least 1 digit, 1 uppercase and 1 lowercase letter"
+    },
+    "passwordConfirmation": {
+      "required": "Password confirmation field is required"
+    },
+    "passwordsMatch": "Passwords must match",
+    "newPassword": {
+      "required": "New password field is required"
+    },
+    "username": {
+      "min": "Minimum number of characters {{count}}",
+      "max": "Maximum number of characters {{count}}",
+      "allowedChars": "Only letters, numbers, \"_\" and \"-\" are allowed"
+    },
+    "terms": {
+      "required": "You must accept the terms"
+    }
+  },
+  "post": {
+    "deleteTitle": "Delete Post",
+    "updateTitle": "Edit Post",
+    "deleteModalText": "Are you sure you want to delete this post?",
+    "updateModalSaveChanges": "Save Changes",
+    "updateModalSave": "Save",
+    "closeEditionModalTitle": "Close Post",
+    "closeEditionModalText": "Do you really want to close the edition of the publication? If you close changes won’t be saved",
+    "postedAgo": "hours ago",
+    "liked": "Like",
+    "reply": "Answer",
+    "addComment": "Add a Comment",
+    "sendComment": "Publish",
+    "imageAlt": "Post image"
+  },
+  "profile": {
+    "altAvatar": "Profile avatar",
+    "following": "Following",
+    "followers": "Followers",
+    "publications": "Publications",
+    "profilePageTabsGeneral": "General Information",
+    "profilePageTabsDevices": "Devices",
+    "profilePageTabsAccountManagement": "Account Management",
+    "profilePageTabsPayments": "Payments",
+    "addProfilePhotoButton": "Add a Profile Photo",
+    "addProfilePhotoModalTitle": "Add a Profile Photo",
+    "selectCountry": "Select Your Country",
+    "selectCity": "SelectYourCity",
+    "deleteProfilePhotoModalTitle": "DeletePhoto",
+    "deleteProfilePhotoModalText": "Are you sure you want to delete the photo?",
+    "selectProfilePhotoButton": "Select Profile Photo",
+    "selectPhotoButton": "Select Photo",
+    "savePhotoButton": "Save",
+    "cropNoData": "No data for cropping",
+    "uploadNoImageId": "Server did not return an ID of the uploaded image",
+    "informationFormUserNameLabel": "Username",
+    "informationFormFirstNameLabel": "First Name",
+    "informationFormLastNameLabel": "Last Name",
+    "informationFormDateOfBirthLabel": "Date of birth",
+    "informationFormSelectCountryLabel": "Select your country",
+    "informationFormSelectCityLabel": "Select your city",
+    "informationFormAboutMeTextAreaLabel": "About me",
+    "informationFormSubmitButton": "Save Changes",
+    "userNameErrorMin": "Minimum 6 characters",
+    "userNameErrorMax": "Maximum 30 characters",
+    "userNameErrorValidCharacters": "Only Latin letters, numbers, _ and -",
+    "firstNameErrorMin": "Enter your name",
+    "firstNameErrorMax": "Maximum 50 characters",
+    "lastNameErrorMin": "Enter your last name",
+    "lastNameErrorMax": "Maximum 50 characters",
+    "aboutMeErrorMax": "Maximum 200 characters",
+    "firstNameLastNameErrorValidCharacters": "Only Latin letters, numbers, _ and - ",
+    "updateSuccess": "Your settings are saved!",
+    "updateAvatarSuccess": "Avatar updated",
+    "deleteAvatarSuccess": "Avatar deleted",
+    "errorFetchingCountries": "Error fetching countries",
+    "errorFetchingCities": "Error fetching cities",
+    "ageError": "A user under 13 cannot create a profile",
+    "dateOfBirthRequired": "Enter date of birth",
+    "profileSettingsPageTitle": "Profile Settings",
+    "serverError": "Error! Server is not available!",
+    "placeholderCountry": "Country",
+    "placeholderCity": "City"
+  }
+}

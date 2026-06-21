@@ -8,7 +8,9 @@
     "build": "next build",
     "build:production": "pnpm build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.4.0",
@@ -23,6 +25,7 @@
     "date-fns": "^4.4.0",
     "next": "16.2.9",
     "react": "19.2.4",
+    "react-day-picker": "^10.0.1",
     "react-dom": "19.2.4",
     "react-hook-form": "^7.79.0",
     "react-redux": "^9.3.0",
@@ -46,6 +49,18 @@
     "jest-environment-jsdom": "^30.4.1",
     "prettier": "^3.8.4",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "storybook": "^10.4.6",
+    "@storybook/nextjs-vite": "^10.4.6",
+    "@chromatic-com/storybook": "^5.2.1",
+    "@storybook/addon-vitest": "^10.4.6",
+    "@storybook/addon-a11y": "^10.4.6",
+    "@storybook/addon-docs": "^10.4.6",
+    "vite": "^8.0.16",
+    "eslint-plugin-storybook": "^10.4.6",
+    "vitest": "^4.1.9",
+    "playwright": "^1.61.0",
+    "@vitest/browser-playwright": "^4.1.9",
+    "@vitest/coverage-v8": "^4.1.9"
   }
 }

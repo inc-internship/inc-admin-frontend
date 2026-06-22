@@ -1,17 +1,13 @@
-import {configureStore} from '@reduxjs/toolkit'
-import {baseApi} from "@/shared/api/baseApi";
-
-const placeholderReducer = (state: Record<string, never> = {}) => state
+import { configureStore } from '@reduxjs/toolkit'
+import { baseApi } from '@/shared/api/baseApi'
+import { rootReducer } from './rootReducer'
 
 export const makeStore = () =>
-    configureStore({
-        reducer: {
-            app: placeholderReducer,
-            [baseApi.reducerPath]: baseApi.reducer,
-        },
-        middleware: getDefaultMiddleware => getDefaultMiddleware().concat(baseApi.middleware),
-        devTools: process.env.NODE_ENV !== 'production',
-    })
+  configureStore({
+    reducer: rootReducer,
+    middleware: getDefaultMiddleware => getDefaultMiddleware().concat(baseApi.middleware),
+    devTools: process.env.NODE_ENV !== 'production',
+  })
 
 export const store = makeStore()
 

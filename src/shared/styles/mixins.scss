@@ -1,5 +1,19 @@
+@use './variables.scss' as variables;
+
 @mixin down($breakpoint) {
   @media (max-width: $breakpoint - 0.02px) {
+    @content;
+  }
+}
+
+@mixin vp-1023 {
+  @include down(variables.$vp-1024) {
+    @content;
+  }
+}
+
+@mixin vp-479 {
+  @include down(variables.$vp-480) {
     @content;
   }
 }

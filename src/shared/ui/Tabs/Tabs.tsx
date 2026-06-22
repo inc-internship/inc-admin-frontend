@@ -1,5 +1,6 @@
 import React, { ComponentPropsWithoutRef } from 'react'
 import * as RadixTabs from '@radix-ui/react-tabs'
+import clsx from 'clsx'
 import s from './Tabs.module.scss'
 import { Typography } from '@/shared/ui/Typography'
 
@@ -18,7 +19,7 @@ export const Tabs = (props: TabsProps) => {
   const { className, tabs, ...rest } = props
 
   return (
-    <RadixTabs.Root {...rest}>
+    <RadixTabs.Root className={clsx(className)} {...rest}>
       <RadixTabs.List className={s.tabsList}>
         {tabs.map(tab => (
           <RadixTabs.Trigger

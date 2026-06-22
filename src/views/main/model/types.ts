@@ -1,1 +1,1 @@
-export type MainPageData = {}
+export type MainPageData = Record<string, never>

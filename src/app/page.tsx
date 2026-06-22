@@ -1,5 +1,6 @@
-import { MainPage } from '@/views/main'
+import { redirect } from 'next/navigation'
+import { DEFAULT_LOCALE } from '@/shared/i18n'
 
 export default function Page() {
-    return <MainPage />
+  redirect(`/${DEFAULT_LOCALE}`)
 }

@@ -8,4 +8,4 @@ export const API_V1_URL = process.env.NODE_ENV === 'development' ? '/api/v1' : `
 
 export const SERVER_API_V1_URL = `${process.env.INTERNAL_API_URL ?? BASE_URL}/api/v1`
 
-export {ROUTES, getLocalizedRoute, type RoutePath} from './routes'
+export { ROUTES, getLocalizedRoute, type RoutePath } from './routes'

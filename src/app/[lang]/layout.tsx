@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react'
 import { notFound } from 'next/navigation'
 import { AppProviders } from '@/app/providers'
+import { AuthInitializer } from '@/app/providers/auth'
 import { SUPPORTED_LOCALES, isLocale } from '@/shared/i18n'
 
 type LangLayoutProps = Readonly<{
@@ -21,5 +22,10 @@ export default async function LangLayout({ children, params }: LangLayoutProps) 
     notFound()
   }
 
-  return <AppProviders initialLocale={lang}>{children}</AppProviders>
+  return (
+    <AppProviders initialLocale={lang}>
+      <AuthInitializer />
+      {children}
+    </AppProviders>
+  )
 }

@@ -3,6 +3,10 @@ import { getLocalizedPath } from '@/shared/i18n/routing'
 
 export const ROUTES = {
   main: '/',
+  login: '/login',
+  statistics: '/statistics',
+  payments: '/payments',
+  posts: '/posts',
 } as const
 
 export type RoutePath = (typeof ROUTES)[keyof typeof ROUTES]

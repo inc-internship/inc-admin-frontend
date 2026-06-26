@@ -1,4 +1,5 @@
 import { createSlice, type PayloadAction } from '@reduxjs/toolkit'
+import type { RootState } from './store'
 
 type SessionState = {
   isAuthenticated: boolean
@@ -37,3 +38,7 @@ const sessionSlice = createSlice({
 
 export const { clearSession, initializeSession, setAuthenticated } = sessionSlice.actions
 export const sessionReducer = sessionSlice.reducer
+
+export const selectIsAuthenticated = (state: RootState) => state.session.isAuthenticated
+export const selectIsSessionInitialized = (state: RootState) => state.session.isInitialized
+export const selectUserEmail = (state: RootState) => state.session.userEmail

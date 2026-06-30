@@ -1,0 +1,15 @@
+@use '@/shared/styles/mixins.scss' as mixins;
+
+.wrapper {
+  min-height: calc(100dvh - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 60px;
+}
+
+@include mixins.vp-767 {
+  .wrapper {
+    padding: 24px 16px;
+  }
+}

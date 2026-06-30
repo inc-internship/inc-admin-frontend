@@ -1,0 +1,138 @@
+@use './variables.scss' as variables;
+
+@mixin down($breakpoint) {
+  @media (max-width: $breakpoint - 0.02px) {
+    @content;
+  }
+}
+
+@mixin vp-1023 {
+  @include down(variables.$vp-1024) {
+    @content;
+  }
+}
+
+@mixin vp-767 {
+  @include down(variables.$vp-768) {
+    @content;
+  }
+}
+
+@mixin vp-479 {
+  @include down(variables.$vp-480) {
+    @content;
+  }
+}
+
+@mixin retina($dpi: 192dpi, $dppx: 2dppx) {
+  @media (min-resolution: $dpi), (min-resolution: $dppx) {
+    @content;
+  }
+}
+
+@mixin not-disabled {
+  &:not([disabled], [aria-disabled='true'], .disabled) {
+    @content;
+  }
+}
+
+@mixin disabled {
+  &[disabled],
+  &[aria-disabled='true'],
+  &.disabled {
+    @content;
+  }
+}
+
+@mixin hover {
+  @media (hover: hover) {
+    @include not-disabled {
+      &:hover {
+        @content;
+      }
+    }
+  }
+}
+
+@mixin focus {
+  @include not-disabled {
+    &:focus-visible {
+      @content;
+    }
+  }
+}
+
+@mixin focus-within {
+  @include not-disabled {
+    &:focus-within {
+      @content;
+    }
+  }
+}
+
+@mixin active {
+  @include not-disabled {
+    &:active {
+      @content;
+    }
+  }
+}
+
+@mixin hover-focus {
+  @include hover {
+    @content;
+  }
+
+  @include focus {
+    @content;
+  }
+}
+
+@mixin hover-focus-within {
+  @include hover {
+    @content;
+  }
+
+  @include focus-within {
+    @content;
+  }
+}
+
+@mixin reset-btn {
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  font-family: inherit;
+  background-color: transparent;
+  outline: none;
+}
+
+@mixin visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+
+  /* stylelint-disable-next-line property-no-deprecated */
+  clip: rect(0 0 0 0);
+}
+
+@mixin container($max-width, $gutter) {
+  width: min(100%, $max-width);
+  margin-inline: auto;
+  padding-inline: $gutter;
+}
+
+@mixin circle-avatar($size, $position: center) {
+  overflow: hidden;
+  flex-shrink: 0;
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: $position;
+}

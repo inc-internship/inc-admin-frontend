@@ -1,0 +1,30 @@
+{
+  "language": {
+    "english": "English",
+    "russian": "Russian"
+  },
+  "common": {
+    "selectPlaceholder": "Select-box",
+    "flagAlt": "flag {{label}}",
+    "showPassword": "Show password",
+    "hidePassword": "Hide password"
+  },
+  "header": {
+    "logoLabel": "Inctagram Super Admin — go to home"
+  },
+  "sidebar": {
+    "sidebarLabel": "Admin sidebar",
+    "navigation": "Main navigation",
+    "usersList": "Users list",
+    "statistics": "Statistics",
+    "paymentsList": "Payments list",
+    "postsList": "Posts list"
+  },
+  "login": {
+    "title": "Sign In",
+    "email": "Email",
+    "emailPlaceholder": "Epam@epam.com",
+    "password": "Password",
+    "submit": "Sign In"
+  }
+}

@@ -4,7 +4,6 @@ import { useEffect } from 'react'
 import { initializeSession } from '@/app/providers/store'
 import { useAppDispatch } from '@/shared/store'
 import { getAccessToken } from '@/shared/lib/authToken'
-import { clearAuthHintCookie, setAuthHintCookie } from '@/shared/lib/authHintCookie'
 
 /**
  * Bootstraps the auth session once on mount.
@@ -18,12 +17,6 @@ export const AuthInitializer = () => {
 
   useEffect(() => {
     const isAuthenticated = Boolean(getAccessToken())
-
-    if (isAuthenticated) {
-      setAuthHintCookie()
-    } else {
-      clearAuthHintCookie()
-    }
 
     dispatch(initializeSession({ isAuthenticated }))
   }, [dispatch])
